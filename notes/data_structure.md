@@ -31,15 +31,13 @@ Python中三类主要的数据结构(序列、映射、集合)
 
 [Python列表对象实现原理](https://foofish.net/python-list-implements.html)
 
-- 列表为可变对象(增改数据不改变内存地址)
+- 列表为可变对象
 
 
 ![](./_image/2017-01-04-17-00-28.jpg)
 
 ## dict 字典
 > 字典以大括号或dict包裹
-
-`字典的实现`
 > Python的字典是用哈希表(hash table)实现的。
 > 哈希表是一个数组，它的索引是对键运用哈希函数(hash function) 求得。
 

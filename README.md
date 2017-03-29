@@ -17,7 +17,7 @@
 ## Python深入
 - [垃圾回收GC](notes/gc.md)
 
-## 其他学习资源
+## 学习资源
 [intermediatePython](https://github.com/yasoob/intermediatePython)
 [interpy-zh](https://github.com/eastlakeside/interpy-zh)
 [Algorithms](https://github.com/prakhar1989/Algorithms)
