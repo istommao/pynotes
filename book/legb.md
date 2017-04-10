@@ -20,4 +20,3 @@
 local -> enclosing -> global -> builtin
 ```
 
-
