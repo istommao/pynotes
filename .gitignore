@@ -1,3 +1,5 @@
+.DS_Store
+
 _book/
 
 # Byte-compiled / optimized / DLL files
@@ -92,8 +94,6 @@ ENV/
 
 .sync/*
 
-.me_configs.data
-
 .z_sync_configs.data
 
 sync_changes.log
@@ -103,4 +103,5 @@ sync_hook.script
 **/.Archive
 
 
+.me_configs.data
 .md_configs.data

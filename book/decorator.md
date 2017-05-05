@@ -36,12 +36,12 @@ print_func('Hello decorator!')
 ```python
 class wrapper:
 
-       def __init__(self, func):
+    def __init__(self, func):
         self._func = func
 
-        def __call__(self):
-            print(self._func)
-            return self._func()
+    def __call__(self):
+        print(self._func)
+        return self._func()
 
 @wrapper
 def func():
@@ -49,3 +49,34 @@ def func():
 ```
 
 
+## 小示例
+
+`普通写法`
+
+```python
+def get_article_detail(uid):
+    article = ORM.get_article(uid)
+
+    if article:
+        cache.incr('key')
+
+    return article
+```
+
+`装饰器写法`
+```python
+def increase_page_view(func):
+
+    def wrapper(*args, **kwargs):
+        obj = func(*args, **kwargs)
+        if obj:
+            cache.incr(obj.id)
+        return obj
+
+    return wrapper
+
+
+@increase_page_view
+def get_article_detail(uid):
+    return ORM.get_article(uid)
+```
