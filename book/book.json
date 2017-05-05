@@ -1,6 +1,6 @@
 {
-    "title": "Linux Command Notes",
-    "description": "Linux命令笔记",
+    "title": "Python Notes",
+    "description": "Python笔记,Python学习笔记",
     "language": "zh-hans",
     "plugins": [
         "github",
