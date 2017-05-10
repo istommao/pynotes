@@ -18,6 +18,7 @@
 
 * [面向对象](oop/index.md)
     * [类与对象](oop/class.md)
+    * [子类与继承](oop/subclass.md)
 
 * [进阶](advance/index.md)
     * [描述符](advance/descriptor.md)
