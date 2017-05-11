@@ -8,3 +8,37 @@
 
 
 ![](./_image/2017-01-04-17-00-28.jpg)
+
+
+## 基本操作
+
+- `添加`
+    ```python
+    lst = ['hello']
+
+    lst.append('world')
+    ```
+
+- `修改`
+    ```python
+    lst = ['hello', 'world']
+
+    lst[0] = '你好'
+    ```
+
+
+- `移除`
+
+    ```python
+    lst = ['hello', 'world']
+
+    lst.remove('hello')
+    ```
+
+- `扩展`
+
+    ```python
+    lst = ['hello world']
+
+    lst.extend(['你好世界'])
+    ```

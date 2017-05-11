@@ -1,5 +1,7 @@
 # 子类
 
+## 继承
+
 ```python
 class Person(object):
 
