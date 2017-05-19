@@ -1,5 +1,6 @@
 # Python学习资源
 
+- [PyZh](http://pyzh.readthedocs.io/)
 - [intermediatePython](https://github.com/yasoob/intermediatePython)
 - [interpy-zh](https://github.com/eastlakeside/interpy-zh)
 - [Algorithms](https://github.com/prakhar1989/Algorithms)
