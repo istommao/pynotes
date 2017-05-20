@@ -4,6 +4,7 @@
 
 * [基础](basic/index.md)
     * [变量作用域](basic/scope.md)
+    * [推导式](basic/comprehensions.md)
 * [数据结构](datastructure/index.md)
     * [字符串](datastructure/string.md)
     * [列表](datastructure/list.md)
