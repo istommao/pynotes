@@ -11,7 +11,6 @@
     * [元组](datastructure/tuple.md)
     * [字典](datastructure/dict.md)
     * [集合](datastructure/set.md)
-
 * [函数编程](functional/index.md)
     * [闭包](functional/closure.md)
     * [递归](functional/recursion.md)
@@ -29,3 +28,5 @@
 * [Python书籍](book.md)
 * [其他](others.md)
 * [程序打包](pack.md)
+* [测试](test.md)
+* [web相关](web.md)
