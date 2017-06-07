@@ -25,9 +25,13 @@
     * [元类](advance/metaclass.md)
     * [垃圾回收](advance/gc.md)
 
-* [Python书籍](book.md)
+* [内建库](builtin/index.md)
+    * [collections](builtin/collections.md)
+    * [functools](builtin/functools.md)
+
 * [其他](others.md)
-* [程序打包](pack.md)
-* [测试](test.md)
-* [web相关](web.md)
-* [编码风格](codestyle.md)
+    * [Python书籍](book.md)
+    * [程序打包](pack.md)
+    * [测试](test.md)
+    * [web相关](web.md)
+    * [编码风格](codestyle.md)
