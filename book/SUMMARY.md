@@ -21,13 +21,18 @@
     * [子类与继承](oop/subclass.md)
 
 * [进阶](advance/index.md)
+    * [生成器](advance/generator.md)
     * [描述符](advance/descriptor.md)
+    * [上下文管理器](advance/context.md)
     * [元类](advance/metaclass.md)
     * [垃圾回收](advance/gc.md)
 
 * [内建库](builtin/index.md)
     * [collections](builtin/collections.md)
     * [functools](builtin/functools.md)
+
+* [异步编程](async/index.md)
+    * [asyncio](async/asyncio.md)
 
 * [其他](others.md)
     * [Python书籍](book.md)
