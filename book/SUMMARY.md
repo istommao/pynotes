@@ -21,6 +21,7 @@
     * [子类与继承](oop/subclass.md)
 
 * [进阶](advance/index.md)
+    * [python中的协议](advance/protocol.md)
     * [生成器](advance/generator.md)
     * [描述符](advance/descriptor.md)
     * [上下文管理器](advance/context.md)
