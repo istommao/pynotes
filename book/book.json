@@ -6,7 +6,8 @@
         "github",
         "prism",
         "sitemap",
-        "toc2"
+        "toc2",
+        "expandable-chapters"
     ],
     "pluginsConfig": {
         "github": {
@@ -23,6 +24,7 @@
         "toc2": {
             "addClass": true,
             "className": "toc"
-        }
+        },
+        "expandable-chapters":{}
     }
 }
