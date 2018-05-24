@@ -32,7 +32,8 @@
 * [内建库](builtin/index.md)
     * [collections](builtin/collections.md)
     * [functools](builtin/functools.md)
-    * [datetime](builtin/datetime.md)
+    * [sys](builtin/sys.md)
+    * [os](builtin/os.md)
 
 * [异步编程](async/index.md)
     * [asyncio](async/asyncio.md)
