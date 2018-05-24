@@ -106,3 +106,6 @@ sync_hook.script
 
 .me_configs.data
 .md_configs.data
+
+configs/
+book/builtin/.markeditor/
