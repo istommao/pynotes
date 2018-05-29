@@ -9,8 +9,25 @@
 - SIGKILL   终止进程     杀死进程
 - SIGALRM   闹钟信号
 
+`示例`
 
-## 信号列表
+```python
+import time
+
+import signal
+
+def handler_signal(signum, frame):
+    print('Get signal', signum, frame)
+
+# 注册信号处理函数
+signal.signal(signal.SIGINT, handler_signal)
+
+print('wait for Control + c')
+time.sleep(5)
+```
+
+
+－－－
 
 - SIGHUP
 - SIGINT
