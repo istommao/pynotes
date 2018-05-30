@@ -8,4 +8,14 @@ Python中的描述符是个什么玩意？
 
 ## __call__
 
+```python
+class Demo(object):
+
+    def __call__(self):
+        print('Demo callable')
+
+demo = Demo()
+demo()
+```
+
 ## __iter__
