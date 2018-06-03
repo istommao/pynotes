@@ -19,3 +19,27 @@ demo()
 ```
 
 ## __iter__
+
+
+## __len__
+
+```python
+class People(object):
+
+    def __init__(self, values=None):
+        self._list = values or []
+
+    def __len__(self):
+        return len(self._list)
+
+people = People(values=['tommao', 'silence'])
+
+print( len(people) )
+```
+
+## __set__ and __get__
+
+```python
+
+```
+

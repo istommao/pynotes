@@ -12,10 +12,15 @@ class Person(object):
     def print_profile(self):
         print(self.name, self.age)
 
+class FeMale(Person):
+    """Female."""
+
 
 class Male(Person):
     """Male inherit Person."""
 
+me = FeMale('Andy', 22)
+me.print_profile()
 
 me = Male('codingcat', 25)
 me.print_profile()

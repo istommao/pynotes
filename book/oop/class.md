@@ -57,3 +57,4 @@ classmethod:  Person maxage 120
 staticmethod:  Hello world
 instance method:  codingcat 25
 ```
+
