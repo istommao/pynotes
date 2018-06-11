@@ -50,7 +50,7 @@ import logging
 import threading
 
 class MyThread(threading.Thread):
-    
+
     def __init__(self, number, logger):
         threading.Thread.__init__(self)
         self.number = number
@@ -97,5 +97,5 @@ if __name__ == '__main__':
 ```python
 
 ```
- 
+
 

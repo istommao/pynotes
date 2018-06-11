@@ -157,5 +157,4 @@ for i in range(1000):
 in_pipe.close()
 sub.join()
 print('Master process finish!')
-
 ```
