@@ -43,6 +43,7 @@
     * [asyncio](async/asyncio.md)
 
 * [其他](others.md)
+    * [第三方库精髓](third.md)
     * [Python爬虫](crawler.md)
     * [面试题](interview.md)
     * [Python书籍](book.md)
