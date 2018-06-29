@@ -125,3 +125,150 @@ Customer D: order changed to 14
 
 10. 是否深入了解过 Python 的 GC 和 GIL
 
+## Django
+
+
+24、django、flask、tornado框架的比较？
+
+25、什么是wsgi？
+
+26、django请求的生命周期？
+
+27、列举django的内置组件？
+
+28、列举django中间件的5个方法？以及django中间件的应用场景？
+
+29、简述什么是FBV和CBV？
+
+30、django的request对象是在什么时候创建的？
+
+31、如何给CBV的程序添加装饰器？
+
+32、列举django orm 中所有的方法（QuerySet对象的所有方法）
+
+33、only和defer的区别？
+
+34、select_related和prefetch_related的区别？
+
+35、filter和exclude的区别？
+
+36、列举django orm中三种能写sql语句的方法。
+
+37、django orm 中如何设置读写分离？
+
+38、F和Q的作用?
+
+39、values和values_list的区别？
+
+40、如何使用django orm批量创建数据？
+
+41、django的Form和ModeForm的作用？
+
+42、django的Form组件中，如果字段中包含choices参数，请使用两种方式实现数据源实时更新。
+
+43、django的Model中的ForeignKey字段中的on_delete参数有什么作用？
+
+44、django中csrf的实现机制？
+
+45、django如何实现websocket？
+
+46、基于django使用ajax发送post请求时，都可以使用哪种方法携带csrf token？
+
+47、django中如何实现orm表中添加数据时创建一条日志记录。
+
+48、django缓存如何设置？
+
+49、django的缓存能使用redis吗？如果可以的话，如何配置？
+
+50、django路由系统中name的作用？
+
+51、django的模板中filter和simple_tag的区别？
+
+52、django-debug-toolbar的作用？
+
+53、django中如何实现单元测试？
+
+54、解释orm中 db first 和 code first的含义？
+
+55、django中如何根据数据库表生成model中的类？
+
+56、使用orm和原生sql的优缺点？
+
+57、简述MVC和MTV
+
+58、django的contenttype组件的作用？
+
+59、谈谈你对restfull 规范的认识？
+
+60、接口的幂等性是什么意思？
+
+61、什么是RPC？
+
+62、Http和Https的区别？
+
+63、为什么要使用django rest framework框架？
+
+64、django rest framework框架中都有那些组件？
+
+65、django rest framework框架中的视图都可以继承哪些类？
+
+66、简述 django rest framework框架的认证流程。
+
+67、django rest framework如何实现的用户访问频率控制？
+
+## Flask
+
+68、Flask框架的优势？
+
+69、Flask框架依赖组件？
+
+70、Flask蓝图的作用？
+
+71、列举使用过的Flask第三方组件？
+
+72、简述Flask上下文管理流程?
+
+73、Flask中的g的作用？
+
+74、Flask中上下文管理主要涉及到了那些相关的类？并描述类主要作用？
+
+75、为什么要Flask把Local对象中的的值stack 维护成一个列表？
+
+76、Flask中多app应用是怎么完成？
+
+77、在Flask中实现WebSocket需要什么组件？
+
+78、wtforms组件的作用？
+
+79、Flask框架默认session处理机制？
+
+80、解释Flask框架中的Local对象和threading.local对象的区别？
+
+81、Flask中 blinker 是什么？
+
+82、SQLAlchemy中的 session和scoped_session 的区别？
+
+83、SQLAlchemy如何执行原生SQL？
+
+84、ORM的实现原理？
+
+85、DBUtils模块的作用？
+
+
+87、SQLAchemy中如何为表设置引擎和字符编码？
+
+88、SQLAchemy中如何设置联合唯一索引？
+
+89、简述Tornado框架的特点。
+
+90、简述Tornado框架中Future对象的作用？
+
+91、Tornado框架中如何编写WebSocket程序？
+
+92、Tornado中静态文件是如何处理的？如： <link href="{{static_url("commons.css")}}" rel="stylesheet" />
+
+93、Tornado操作MySQL使用的模块？
+
+94、Tornado操作redis使用的模块？
+
+95、简述Tornado框架的适用场景？
