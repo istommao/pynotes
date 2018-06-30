@@ -272,3 +272,15 @@ Customer D: order changed to 14
 94、Tornado操作redis使用的模块？
 
 95、简述Tornado框架的适用场景？
+
+## supervisor
+
+## celery
+
+
+## gunicorn
+
+
+## redis
+
+## MySQL
