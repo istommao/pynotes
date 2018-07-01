@@ -275,12 +275,29 @@ Customer D: order changed to 14
 
 ## supervisor
 
+- supervisor的实现
+- 进程管理，客户端通讯
+
 ## celery
+
+- celery的基本使用
+- celery基本架构
 
 
 ## gunicorn
 
+- gunicorn实现原理及架构
+
 
 ## redis
 
+- 基本使用命令
+- 生态的了解
+- 用到哪些数据结构如跳表等
+
+
 ## MySQL
+
+- MySQL基本架构
+- 性能问题如何调优，索引怎么建等
+- MySQL的生态，分库分表 主从备份 主主备份等
