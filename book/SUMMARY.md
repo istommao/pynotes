@@ -1,7 +1,7 @@
 # Summary
 
 * [简介](README.md)
-
+* [安装](install.md)
 * [基础](basic/index.md)
     * [变量作用域](basic/scope.md)
     * [推导式](basic/comprehensions.md)
