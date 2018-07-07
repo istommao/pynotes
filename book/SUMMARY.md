@@ -41,7 +41,6 @@
 * [线程](thread/index.md)
 * [异步编程](async/index.md)
     * [asyncio](async/asyncio.md)
-
 * [其他](others.md)
     * [第三方库精髓](third.md)
     * [Python爬虫](crawler.md)
@@ -51,3 +50,4 @@
     * [测试](test.md)
     * [web相关](web.md)
     * [编码风格](codestyle.md)
+* [CPython源码学习](cpyhton/index.md)
