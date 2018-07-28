@@ -42,7 +42,7 @@ s = "[lol]你好，帮我把这些markup清掉，[smile]。谢谢！"
 - 请使用python, 对下面的函数进行处理
 ```python
 def hello(name):
-    print "hello, %s" % name
+    print("hello, %s" % name)
 ```
 
 在函数被调用时打印耗时详情
@@ -265,7 +265,8 @@ Customer D: order changed to 14
 
 91、Tornado框架中如何编写WebSocket程序？
 
-92、Tornado中静态文件是如何处理的？如： <link href="{{static_url("commons.css")}}" rel="stylesheet" />
+92、Tornado中静态文件是如何处理的？如：
+<link href="\{\{static_url("commons.css")}}" rel="stylesheet" />
 
 93、Tornado操作MySQL使用的模块？
 

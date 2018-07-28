@@ -19,6 +19,10 @@
             "hostname": "https://python.silentnotes.top/"
         },
         "prism": {
+            "lang": {
+                "console": "bash",
+                "shell": "bash"
+            },
             "css": [
               "prismjs/themes/prism-okaidia.css"
             ]
