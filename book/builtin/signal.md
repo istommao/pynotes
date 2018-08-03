@@ -27,8 +27,6 @@ time.sleep(5)
 ```
 
 
-－－－
-
 - SIGHUP
 - SIGINT
 - SIGQUIT

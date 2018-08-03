@@ -24,12 +24,11 @@
     * [子类与继承](book/oop/subclass.md)
 
 * [进阶](book/advance/index.md)
-    * [python中的协议](book/advance/protocol.md)
-    * [生成器](book/advance/generator.md)
-    * [描述符](book/advance/descriptor.md)
-    * [上下文管理器](book/advance/context.md)
-    * [元类](book/advance/metaclass.md)
-    * [垃圾回收](book/advance/gc.md)
+    * [生成器](advance/generator.md)
+    * [魔术方法](advance/magic_methods.md)
+    * [上下文管理器](advance/context.md)
+    * [元类](advance/metaclass.md)
+    * [垃圾回收](advance/gc.md)
 
 * [内建库](book/builtin/index.md)
     * [collections](book/builtin/collections.md)
