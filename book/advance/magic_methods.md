@@ -86,3 +86,66 @@ zoo = Zoo()
 zoo['lion'] = 'king'
 print(zoo['lion'])
 ```
+
+## `__getattribute__` vs `__getattr__`
+
+> difference-between-getattr-vs-getattribute
+
+[stackoverflow Difference between __getattr__ vs __getattribute__](https://stackoverflow.com/questions/3278077/difference-between-getattr-vs-getattribute)
+
+`__setattr__`使用，可以做对象赋值检查
+
+```python
+class Person(object):
+
+    def __setattr__(self, attr, value):
+        if not isinstance(value, int):
+            raise ValueError('Invalid value "{}"'.format(value))
+
+        super(Person, self).__setattr__(attr, value)
+
+tom = Person()
+tom.age = 26
+
+# 抛出异常
+tom.age = '26'
+```
+
+`__getattr__` 在对象不存在该属性的时候调用
+
+```python
+class Person(object):
+
+    def __getattr__(self, attr):
+        print('__getattr__', attr)
+        return super(Person, self).__getattr__(attr)
+
+tom = Person()
+tom.age
+```
+
+`__getattribute__`只在新式类中有，对象的所有特性的访问都会调用这个方法。
+
+```python
+class Person(object):
+
+    def __getattr__(self, attr):
+        print('__getattr__', attr)
+        return super(Person, self).__getattr__(attr)
+
+    def __getattribute__(self, attr):
+        print('__getattribute__', attr)
+        return super(Person, self).__getattribute__(attr)
+
+tom = Person()
+tom.age = 26
+
+tom.age
+tom.height
+```
+
+----
+
+- [Magic Methods](http://farmdev.com/src/secrets/magicmethod/index.html)
+- [A-guide-to-pythons-magic-methods](http://pycoders-weekly-chinese.readthedocs.io/en/latest/issue6/a-guide-to-pythons-magic-methods.html)
+
