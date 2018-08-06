@@ -19,23 +19,6 @@ Python中的描述符是个什么玩意？
 
 ### `__set__` and `__get__`
 
-```python
-class Animal(object):
-
-    def __init__(self, val=None):
-        self.val = val
-
-    def __get__(self, obj, objtype):
-        return objtype
-
-    def __set__(self, obj, val):
-        self.val = val
-
-an = Animal()
-an.name = 'cat'
-print(an.name)
-```
-
 
 
 ### `__call__`
@@ -87,7 +70,7 @@ zoo['lion'] = 'king'
 print(zoo['lion'])
 ```
 
-## `__getattribute__` vs `__getattr__`
+### `__getattribute__` vs `__getattr__`
 
 > difference-between-getattr-vs-getattribute
 
@@ -149,3 +132,40 @@ tom.height
 - [Magic Methods](http://farmdev.com/src/secrets/magicmethod/index.html)
 - [A-guide-to-pythons-magic-methods](http://pycoders-weekly-chinese.readthedocs.io/en/latest/issue6/a-guide-to-pythons-magic-methods.html)
 
+
+## 上下文管理器
+
+`普通操作`
+```python
+fd = open('file.txt', 'w')
+fd.write('Hello world!')
+
+fd.close()
+```
+
+`使用with关键字`
+
+```python
+with open('file.txt', 'w') as fd:
+    fd.write('Hello world!')
+```
+
+`自定义上下文对象`
+
+```python
+class ContextDemo(object):
+
+    def __enter__(self):
+        print('__enter__')
+        return self
+
+    def __exit__(self, exc_type, exc_value, trace_back):
+        print('__exit__', exc_type, exc_value, trace_back)
+        return True
+
+    def print(self):
+        print('ContextDemo')
+
+with ContextDemo() as f:
+    f.print()
+```

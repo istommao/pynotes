@@ -24,7 +24,6 @@
 * [进阶](advance/index.md)
     * [生成器](advance/generator.md)
     * [魔术方法](advance/magic_methods.md)
-    * [上下文管理器](advance/context.md)
     * [元类](advance/metaclass.md)
     * [垃圾回收](advance/gc.md)
 
