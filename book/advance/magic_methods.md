@@ -169,3 +169,23 @@ class ContextDemo(object):
 with ContextDemo() as f:
     f.print()
 ```
+
+### contextlib
+
+> 除了 `__enter__`和`__exit__` 还可以使用内建的contextlib实现上下文管理器
+
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def context_demo(word):
+    try:
+        print('enter')
+        yield word
+    finally:
+        print('exit')
+
+with context_demo('hello'):
+    print('with context_demo')
+```
+
