@@ -48,7 +48,7 @@ def main_loop():
     n = 0
     while n < 5:
         n = n + 1
-        print('Thread %s  %s' % (threading.current_thread().name, n))
+        print('Thread %s %s' % (threading.current_thread().name, n))
         time.sleep(1)
     print('Thread %s end' % threading.current_thread().name)
 
@@ -97,7 +97,8 @@ if __name__ == '__main__':
         thread.start()
 ```
 
-## threading.Lock()
+## 线程锁 threading.Lock()
+
 ```python
 import logging
 import random

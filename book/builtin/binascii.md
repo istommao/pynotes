@@ -17,5 +17,11 @@ binascii.unhexlify('48656c6c6f20776f726c64')
 
 ```python
 hex(1024)
+```
 
+
+## 十进制转二进制
+
+```python
+bin(1024)
 ```
