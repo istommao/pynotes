@@ -45,6 +45,10 @@
 - [signal](builtin/signal.md)
 - [datetime](builtin/datetime.md)
 
+## 设计模式
+- [有哪些设计模式](design_patterns/index.md)
+- [单例模式](design_patterns/singleton.md)
+
 ## 进程
 - [进程](process/index.md)
 - [管道](process/pipe.md)
@@ -53,6 +57,7 @@
 ## 线程
 
 * [线程](thread/index.md)
+* [线程概念篇](thread/concept.md)
 
 ## 异步编程
 - [异步编程](async/index.md)

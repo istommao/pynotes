@@ -107,30 +107,51 @@ Customer D: order changed to 14
 
 1. 是否了解动态语言的鸭子模型
 
+> 是动态类型语言的一种风格
+> 在鸭子类型中，关注点在于对象的行为，能作什么；而不是关注对象所属的类型
+
 2. 是否了解可变参数与关键字参数
+
+> 函数的位置参数和关键字参数
 
 3. 对函数式编程有初步了解
 
 4. 是否知道列表生成式
 
+```python
+lst = [i for i in range(100) if i % 2 == 0]
+```
+
 5. 是否知道 lambda/decorator/slots
 
+> 匿名函数 装饰器 slots
+
 6. 为什么要把缺省参数设为 immutable
+
+> 如果传入可变参数会导致调用的时候产生不是你预期的结果。
+Python函数参数默认值的陷阱和原理深究
+http://cenalulu.github.io/python/default-mutable-arguments/
 
 7. 是否知道 Mixin
 
 8. 是否知道 WSGI 接口
 
+> web server网关接口，关于web服务器与web框架对接的一个协议
+
 9. 是否知道异步框架如 gevent/tornado
 
 10. 是否深入了解过 Python 的 GC 和 GIL
 
-## Django
+> 引用计数 分代回收
+> GIL 全局解释器锁，同一时刻只有一个线程在运行。python的多线程无法应用多核
 
+## Django
 
 24、django、flask、tornado框架的比较？
 
-25、什么是wsgi？
+> django大而全，什么事情都帮你做好的架子，笨重不灵活
+> flask 小而美，但是什么事情都需要你自己决定，很灵活但需要比较高的项目设计功底
+> 高性能异步web框架，也可以单独作为网络库使用
 
 26、django请求的生命周期？
 
@@ -139,6 +160,8 @@ Customer D: order changed to 14
 28、列举django中间件的5个方法？以及django中间件的应用场景？
 
 29、简述什么是FBV和CBV？
+
+> 基于函数的view 基于类的view
 
 30、django的request对象是在什么时候创建的？
 
@@ -180,13 +203,19 @@ Customer D: order changed to 14
 
 49、django的缓存能使用redis吗？如果可以的话，如何配置？
 
+> settings.py中配置 CACHE
+
 50、django路由系统中name的作用？
 
 51、django的模板中filter和simple_tag的区别？
 
 52、django-debug-toolbar的作用？
 
+> debug用，可以查看整个执行过每个环节的耗时
+
 53、django中如何实现单元测试？
+
+> 基于TestCase，继承然后写测试
 
 54、解释orm中 db first 和 code first的含义？
 
@@ -204,7 +233,11 @@ Customer D: order changed to 14
 
 61、什么是RPC？
 
+> 远程过程调用
+
 62、Http和Https的区别？
+
+> 一个加密传送，一个纯文本流
 
 63、为什么要使用django rest framework框架？
 

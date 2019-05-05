@@ -1,6 +1,5 @@
 # 装饰器
 
-
 ## 什么是装饰器
 
 > Python中的装饰器本质上就是在不改变函数本身的情况下 包装一个函数成为另一个函数的语法糖
@@ -31,6 +30,27 @@ def print_func(words):
 print_func('Hello decorator!')
 ```
 
+*带参数*
+
+```python
+def wrapper(*args, **kwargs):
+    print(args, kwargs)
+
+    def wrap(func):
+
+        def _inner(*args, **kwargs):
+            return func(*args, **kwargs)
+        return _inner
+
+    return wrap
+
+@wrapper('hello', key='key')
+def print_func(words):
+    return words
+
+print_func('Hello decorator with parameters!')
+```
+
 ## 类装饰器
 
 ```python
@@ -39,13 +59,32 @@ class wrapper:
     def __init__(self, func):
         self._func = func
 
-    def __call__(self):
-        print(self._func)
-        return self._func()
+    def __call__(self, *args, **kwargs):
+        return self._func(*args, **kwargs)
 
 @wrapper
+def func(*args, **kwargs):
+    return 'hello class decorator'
+```
+
+*带参数*
+
+```python
+class wrapper:
+
+    def __init__(self, *args, **kwargs):
+        print(args, kwargs)
+
+    def __call__(self, func):
+
+        def inner(*args, **kwargs):
+            return func(*args, **kwargs)
+
+        return inner
+
+@wrapper('hello', key='key')
 def func():
-    return 'hello'
+    return 'hello class decorator  with parameters'
 ```
 
 

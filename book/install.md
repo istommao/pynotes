@@ -1,6 +1,6 @@
 # Python安装
 
-## Centos编译安装
+## CentOS编译安装
 
 ```shell
 yum install wget gcc make
